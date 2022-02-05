@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework_6</title>
+</head>
+<body>
+    <script>
+
+
+//1. 
+
+// let number = 4211133 //7791 //5
+// let arr = Array.from(String(number))
+
+// function recursion(arr, func) {
+  
+//   function loop(i) {
+//     if(i >= arr.length) {
+//       return;
+//     }
+//     func(arr[i], i);
+//     loop(i + 1);
+//   }
+//   loop(0);
+// }
+
+// recursion((arr), function(val) {
+ 
+//   if (val % 2 !== 0) {
+        
+//      console.log("odd") 
+//   } 
+
+//   else {
+//     console.log("even") 
+//   }
+  
+// })
+
+
+//---------------------------------------------------------------------
+
+//2
+
+// function minPos(ns) {
+//   if (ns.length === 1) {
+//     return ns[0];
+//   }
+//   const [first, second, ...tail] = ns;
+//   if (first >= second && first < 0 && second < 0) {
+//     return minPos([-1, ...tail]);
+//   }
+//   if (first >= second && first >= 0 && second >= 0) {
+//     return minPos([second, ...tail]);
+//   } else {
+//     if (second >= 0 && first < 0) {
+//       return minPos([second, ...tail]);
+//     } else {
+//       return minPos([first, ...tail]);
+//     }
+//   }
+// }
+// console.log(minPos([56, -9, 87, -23, 0, 2, -105, 55, 1]));
+
+// console.log(minPos([45, -9, 15, 5, -78]));
+
+// console.log(minPos([-5, -9, -111, -1000, -7]));
+
+
+//----------------------------------------------------------------
+//3
+
+// function binarySearch(arr,l,r,x)
+// {
+//     if (r >= l)
+//         {
+//             let mid = l + Math.floor((r - l) / 2)
+   
+            
+//             if (arr[mid] == x)
+//                 return mid;
+//             if (mid > l && arr[mid - 1] == x)
+//                 return (mid - 1);
+//             if (mid < r && arr[mid + 1] == x)
+//                 return (mid + 1)
+   
+            
+//             if (arr[mid] > x)
+//                 return binarySearch(arr, l, mid - 2, x)
+   
+            
+//             return binarySearch(arr, mid + 2, r, x)
+//         }
+   
+        
+//         return -1
+// }
+
+// //let arr=[-9, -4, -4, 3, 12, 4, 5]
+// let arr=[2, 12, 15, 48, 64];
+
+// let n = arr.length
+// let x = 4
+// let result = binarySearch(arr, 0, n - 1, x)
+// if(result == -1)
+//     console.log(-1)
+// else
+//     console.log(result)
+                
+
+//--------------------------------------------------------------
+//4
+
+//var array = [6,78,'n',0,1]
+//var array = [5]
+//var array = []
+
+//   function myShift (array) {
+//   for (var i = 0; i < array.length; i++) {
+//     array[i] = array[i + 1];
+//   }
+//   if  (array && !array.length) {
+//     return array
+//    }
+//   --array.length
+//  }
+  
+// myShift(array)
+
+// console.log(array)
+
+
+//--------------------------------------------------------------------
+
+//5
+
+ //let arr = [1, [3, 4, [1, 2]], 10]
+ //let arr = [14,[1,[[[3,[]]], 1], 0]]
+
+// function flatten(arr) {
+//     var ret = [];
+//     for(let i = 0; i < arr.length; i++) {
+//         if(Array.isArray(arr[i])) {
+//             ret = ret.concat(flatten(arr[i]));
+//         } else {
+//             ret.push(arr[i]);
+//         }
+//     }
+//     return ret;
+// }
+
+// console.log(flatten(arr))
+
+
+//---------------------------------------------------------------------
+
+//6
+
+// let arr = ['a', 'b','c','d','e','f','g','h']
+
+// function rotateArr(d, arr) {
+    
+//     for(var i=d;i<arr.length;i++) {
+//     arr.unshift(arr.pop());
+    
+// }
+//     return arr;
+// }
+
+// console.log(rotateArr(-2,arr)) //3
+
+
+//---------------------------------------------------------------------
+
+//7
+
+
+// let number = 29//14//999999999999
+    
+// function sumNum (number) {
+
+//   return (number - 1) % 9 + 1;
+// }
+  
+// console.log(sumNum (number))
+
+
+   </script>
+ </body>
+ </html>
